@@ -1,0 +1,34 @@
+Általános algok:
+szum, osztók száma, legnagyobb keresés/legkisebb keresés, eldöntés pl: monoton növekvő
+
+
+
+
+C-ben csak ascii:
+kódban található C spekcó karakter kezelés (karakter) pl: karaktert int-ként kiirva visszaadja a kódját
+
+függvények értéket adnak vissza, sikeresnél pl.: 1 (kód:sikeres)
+
+#include <stdbool.h> ----> bool változó library
+bool kisebb = x<y;
+
+
+
+
+előadás linkje: https://infoc.eet.bme.hu/ea02/#3
+
+---------------------------- 1.fél
+
+
+Tömbök
+
+származtatott típus: nem beépített
+
+üres tömb: int t[10]{0}; meg kell valamit adni a kapcsosban
+dijsktra feltétl: ciklus 0-tól kisebb mint méretig megy i=0; i<array.size;++i
+példa tömbhasználatra : (tomb.c)
+
+kitérő:
+randomok pseudo randomok, úgy mint mindehol 
+srand(time(0)); ----> 1971 óta eltelt másodperceket használja random szám adásához
+rand() ----> egész számot generál
