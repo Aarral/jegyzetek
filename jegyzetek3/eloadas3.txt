@@ -1,0 +1,37 @@
+A kód hoszabban megfogalmazva lehet nem lassab -- a compiler optimalizál
+double --> int : levágja a tört részt, mindenképp lefelé kerekít
+hosszabb programnál érdemes deklarálni majd később definiálni a függvényeket
+ha printf(rand())-ot hívunk akkor az lehet valahol mellékhatás szerűen megváltoztatja a random értékét
+ZH-nál akár ez 5pont minusz, ne legyen mellékhatás és visszatérő érték egyszerre (mellékhatás pl.: printf,scanf, visszatérő érték pl.: int())
+int / double = double
+
+Struktúra deklarálás
+
+typedef struct Tort {
+    int szaml, nev; /* tört: számláló és nevező */
+} Tort;
+
+struct Tort t1, t2; --- példányosítás
+
+struct Tort t1;
+ 
+t1.szaml = 3;  /* a számlálója legyen 3 */
+t1.nev = 4;
+
+struct név {
+   T1 mező1, mező2, …;
+   T2 mező3;
+   …
+};  
+
+typedef: struct Tort helyett Tort x; lesz
+
+
+typedef struct Pont{
+	double x,y;
+} Pont;
+Pont p;
+Pont p1 = { 2,5};
+
+globális vagy lokális létrehozás
+
