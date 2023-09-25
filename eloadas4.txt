@@ -1,0 +1,42 @@
+Pointer egy memóriarészre mutat, tömb[index] helyett pointer
+A pointer C-ben típusos
+
+
+void csere(int *pa, int *pb) {
+  int temp;
+  temp = *pa;
+  *pa = *pb;   x és y változik! 
+  *pb = temp;
+}
+ 
+int main(void) {
+  int x = 3, y = 4;
+  csere(&x, &y);
+  printf("%d,%d", x, y);    4,3 
+}
+
+int &p1, &p2;
+p1=&tomb[0] === p1=tomb;
+
+return NULL; ---> null pointer, nem mutat sehova, nem történt semmi, nincs találat
+
+
+printf("\\") = \
+
+#include <stdio.h>
+ 
+int main(void) {
+    char str[50] = "hello";
+ 
+    printf("1. %s\n", str);
+ 
+    str[0] = 'H';
+    printf("2. %s\n", str);
+ 
+    str[5] = '!';
+    str[6] = '\0';
+    printf("3. %s\n", str);
+ 
+    return 0;
+} ------> string bővítése, fontos a \0 lezárót is pakolgatni ha bővítjk a stringet %s a string kiírás
+char h[] = "Hello"; ez is ok, compiler megszámolja helyetted
